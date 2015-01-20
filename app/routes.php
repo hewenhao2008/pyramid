@@ -54,5 +54,11 @@ Route::get('tableCreate',function(){
 });
 
 Route::get('user',function(){
-	return View::make('user');
+	return View::make('regist.confirmPhone');
 });
+
+Route::get('sendVerifyCode/{phone_num}',array('as'=>'sendVerifyCode',function($phone_num){
+	//
+
+	echo $phone_num;
+}));
