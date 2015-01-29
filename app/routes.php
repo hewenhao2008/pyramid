@@ -53,12 +53,37 @@ Route::get('tableCreate',function(){
 
 });
 
-Route::get('user',function(){
-	return View::make('regist.confirmPhone');
+//用户登陆路由
+Route::get('login',['as'=>'login',function(){
+	return View::make('common.login');
+}]);
+
+//验证手机
+Route::get('verify_phone',['as'=>'verify_phone',function(){
+	return View::make('common.verify_phone');
+}]);
+
+Route::post('verify_phone',function(){
+	$phone_num = Input::get('phone_num');
+	Session::put('verify_code',111111);
+	return Response::json(['code'=>true,'info'=>'发送成功']);
 });
 
-Route::get('sendVerifyCode/{phone_num}',array('as'=>'sendVerifyCode',function($phone_num){
-	//
+Route::post('getVerifyCode',function(){
+	return Response::json(['verify_code'=>Session::get('verify_code')]);
+});
 
-	echo $phone_num;
-}));
+Route::get('loginPro/{user_name}',function($user_name){
+	$user['nickname']   = $user_name;
+	$user['openid']     = sha1($user_name);
+	$user['headimgurl'] = 'http://182.92.185.246/Other/portraits/'.$user_name.'.jpg';
+	Session::put('auth',$user);
+	session_start();
+	$url = $_SESSION['url'];
+	return Redirect::to($url);
+});
+
+Route::get('item/create','ItemController@create');
+
+
+

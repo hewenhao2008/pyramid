@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none;}
+/*我的项目*/
+.ite_content{width:100%;height:auto; position:absolute; background:url(../images/bg.jpg) center center no-repeat; background-size:cover;}
+.toux{width:100%; text-align:center; margin-top:30px}
+.toux img{width:100px;height:110px; border:#772509 1px solid;}
+.iet_name{ text-align:center; color:#772509; font-size:18px;}
+.goal{width:100%; overflow:hidden; }
+.goal li{ float:left; font-size:14px; color:#772509; margin-left:3%;font-family:"方正黑体简体" ;}
+.goal li span{ font-size:16px}
+.ite_xm{width:90%;height:auto; margin-left:5%; border:#6a3906 1px solid; margin-top:20px}
+.ite_top{width:100%;height:40px; line-height:40px; text-align:center; position:relative;}
+.opacity{ background-color:#b64926;-moz-opacity: 0.5; opacity:.50; filter: alpha(opacity=88); border-bottom:#6a3906 1px solid; position:absolute;width:100%;height:40px; top:0;left:0}
+.ite_top1{ position:absolute;left:45%;color:#772509;}
+.ite_main{width:100%;height:100%; background-image:url(../images/ht.png)}
+.ite_p1{ font-size:24px; color:#772509;padding:10px; }
+.ite_p2{ line-height:20px; padding:10px; font-size:16px; top:10%; color:#772509}
+.ite_tu{width:90%; margin-left:5%;height:auto; overflow:hidden;}
+.ite_main .ite_tu img{ float:left;width:30%;height:120px; margin-left:3%; margin-top:10px; opacity:1.0;
+filter:alpha(opacity=100);}
+.ite_time{height:30px;  margin-right:10px; font-size:13px; color:#772509;font-family:"方正黑体简体" ; line-height:30px;width:100%;}
+.ite_time p{ float:right; margin-right:10px}
+
+.friend{width:90%; margin-left:5%;height:auto; overflow:hidden; margin-top:5%;}
+.wtx{ float:left;width:20%;}
+.wtx img{width:50px;height:50px; border:#772509 1px solid;}
+.frienf_centent{width:79%;height:auto; border:#772509 1px solid; background-image:url(../images/ht.png); float:left}
+.fri_p1{ font-size:18px; color:#772509; font-family:"方正黑体简体"; padding:10px;height:40px}
+.fri_p1 span{ color:#000}
+.fri_p2{ font-size:16px; color:#772509; padding:10px;}
+.dx{width:100%;height:50px; overflow:hidden;}
+.fri_time{ float:left; line-height:50px; color:#772509;font-family:"方正黑体简体"; margin-left:5%;}
+.fri_xx{ float:right; margin-right:5%;}
+
+
+.ite_box{ margin-bottom:80px}
+.fri_box{display:none;  position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color:#333; z-index:1001; -moz-opacity: 0.9; opacity:.90; filter: alpha(opacity=88);}
+.fri_pl{width:90%; margin-left:5%; border:#772509 1px solid;height:150px; border-radius:10px; margin-top:30%; background-color:#fff0a5;}
+.fri_top{height:50px; border-bottom:#772509 1px solid;width:90%; margin-left:5%; overflow:hidden;font-family:"方正黑体简体";}
+.qx{ float:left; width:30%; line-height:50px; color:#393939; font-size:16px;}
+.qx_p1{ float:left; width:30%; line-height:50px; color:#772509; font-size:20px; text-align:center}
+.fb{height:40px; background-color:#772509; border-radius:8px; line-height:40px; text-align:center; color:#FFF; float:right;width:25%; margin-top:5px; }
+.fri_nr{width:90%; border:none;height:70px; background-color:#fff0a5; padding:10px; font-size:16px}
+.nav1{width:90px;height:130px; background-color:#fff0a5; border:#772509 1px solid; border-radius:8px; position:fixed; bottom:70px; right:10px; text-align:center; display:none;}
+.sj{ margin-top:-10px}
+.fri_fx{width:100%;height:45px; line-height:45px; color:#72736e; border-bottom:#683422 1px solid}
+.fri_center{width:100%;height:45px; line-height:45px; color:#72736e;display:block; text-decoration: none;}
+.gri_gz{border-bottom:#683422 1px solid;width:100%;height:40px; line-height:45px; text-align:center; text-decoration:none; color:#72736e; display:block;}
+.suc_box{display:none; position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color:#333; z-index:1001; -moz-opacity: 0.9; opacity:.90; filter: alpha(opacity=88);}
+
+.footer{width:100%;height:50px; background-image:url(../images/ht_11.png); border-top:#6a3906 1px solid; position:fixed; bottom:0; overflow:hidden;}
+.zc{ display:block;width:70%;height:50px; border-right:#6a3906 1px solid; float:left; line-height:50px; text-align:center; text-decoration:none; color:#772509; letter-spacing:5px; font-size:20px}
+.nav{ float:left;width:28px;height:50px;}
+.nav img{ margin-top:15px; margin-left:40px }

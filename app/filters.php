@@ -101,3 +101,9 @@ Route::filter('Auth',function(){
 	return 'hello hello ave not login';
 });
 
+Route::filter('auth',function(){
+	$auth = Session::get('auth');
+	if (empty($auth)) {
+		return Redirect::to('login');
+	}
+});
